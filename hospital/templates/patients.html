@@ -1,0 +1,1 @@
+<form method='get'><input name='q' value='{{q}}' placeholder='Search'><button>Search</button></form>{% for p in patients %}{{p.name}} <a href='/update/{{p.id}}/'>Edit</a> <a href='/delete/{{p.id}}/'>Delete</a><br>{% endfor %}
